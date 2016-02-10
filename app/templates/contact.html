@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+
+{% block js %}
+{% endblock %}
+
+
+{% block main %}
+<div class="container">
+  <form class="form-group col-md-6" action="/contact" method="post">
+    <h1>CONTACT FORM</h1>
+    <h3>Fill in this form to contact the site owners.</h3>
+    
+    <h4>Name</h4>
+    <label>Please enter your full name</label>
+    <input class="form-control" type="text" name="name"/>
+    
+    <h4>E-Mail</h4>
+    <label>Please enter your email address</label>
+    <input class="form-control" type="email" name="email" />
+    
+    <h4>Subject</h4>
+    <input class="form-control" type="text" name="subject" />
+    
+    <h4>Message</h4>
+    <label>Please enter the message you wish to send.</label>
+    <br>
+    <textarea class="form-control" name="messagebody"></textarea>
+    <br>
+    
+    <input class="btn btn-default" type="submit" name="submit" value="Send" />
+  </form>
+</div>
+{% endblock %}
+
